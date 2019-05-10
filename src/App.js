@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Provider } from 'react-redux'
 import store from './store'
+import AlbumsListContainer from './components/AlbumsListContainer';
 
 export default class App extends Component {
   render(){
@@ -10,7 +11,7 @@ export default class App extends Component {
     <Provider store={store}>
     <div className="App">
       <header className="App-header">
-        Just checking
+        <AlbumsListContainer />
       </header>
     </div>
     </Provider>
